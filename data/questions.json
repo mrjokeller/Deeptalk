@@ -1,0 +1,268 @@
+[
+    {
+        "question": "Wie fühlst du dich heute bei der Arbeit?",
+        "type": "checkin",
+        "depth": "light",
+        "topic": "mood",
+        "risk": "safe"
+    },
+    {
+        "question": "Was ist dein Energielevel heute auf einer Skala von 1-10?",
+        "type": "checkin",
+        "depth": "light",
+        "topic": "mood",
+        "risk": "safe"
+    },
+    {
+        "question": "Mit welcher Farbe würdest du deine aktuelle Stimmung beschreiben?",
+        "type": "checkin",
+        "depth": "light",
+        "topic": "mood",
+        "risk": "safe"
+    },
+    {
+        "question": "Was läuft heute besonders gut für dich?",
+        "type": "checkin",
+        "depth": "light",
+        "topic": "work",
+        "risk": "safe"
+    },
+    {
+        "question": "Welche Aufgabe freut dich heute am meisten?",
+        "type": "checkin",
+        "depth": "light",
+        "topic": "work",
+        "risk": "safe"
+    },
+    {
+        "question": "Wie ist dein Start in den Tag gelaufen?",
+        "type": "checkin",
+        "depth": "light",
+        "topic": "mood",
+        "risk": "safe"
+    },
+    {
+        "question": "Was bringt dich heute zum Lächeln?",
+        "type": "checkin",
+        "depth": "light",
+        "topic": "fun",
+        "risk": "safe"
+    },
+    {
+        "question": "Wer im Team hat dich kürzlich unterstützt?",
+        "type": "checkin",
+        "depth": "light",
+        "topic": "team",
+        "risk": "safe"
+    },
+    {
+        "question": "Was hast du heute Morgen gelernt?",
+        "type": "checkin",
+        "depth": "light",
+        "topic": "learning",
+        "risk": "safe"
+    },
+    {
+        "question": "Wie fühlst du dich mit den Zielen für heute?",
+        "type": "checkin",
+        "depth": "medium",
+        "topic": "mood",
+        "risk": "safe"
+    },
+    {
+        "question": "Was motiviert dich gerade am meisten in deinem Job?",
+        "type": "checkin",
+        "depth": "medium",
+        "topic": "work",
+        "risk": "safe"
+    },
+    {
+        "question": "Welche Zusammenarbeit freut dich diese Woche?",
+        "type": "checkin",
+        "depth": "medium",
+        "topic": "team",
+        "risk": "safe"
+    },
+    {
+        "question": "Was hast du Neues ausprobiert?",
+        "type": "checkin",
+        "depth": "medium",
+        "topic": "learning",
+        "risk": "safe"
+    },
+    {
+        "question": "Was macht dir heute spontan Freude?",
+        "type": "checkin",
+        "depth": "medium",
+        "topic": "fun",
+        "risk": "safe"
+    },
+    {
+        "question": "Wie geht es dir emotional mit dem aktuellen Projekt?",
+        "type": "checkin",
+        "depth": "deep",
+        "topic": "mood",
+        "risk": "mightbesensitive"
+    },
+    {
+        "question": "Was belastet dich gerade am Arbeitsalltag?",
+        "type": "checkin",
+        "depth": "deep",
+        "topic": "work",
+        "risk": "mightbesensitive"
+    },
+    {
+        "question": "Welche Dynamik im Team spürst du stark?",
+        "type": "checkin",
+        "depth": "deep",
+        "topic": "team",
+        "risk": "mightbesensitive"
+    },
+    {
+        "question": "Welche Erkenntnis hat dich diese Woche verändert?",
+        "type": "checkin",
+        "depth": "deep",
+        "topic": "learning",
+        "risk": "mightbesensitive"
+    },
+    {
+        "question": "Was hat dich kürzlich überrascht positiv?",
+        "type": "checkin",
+        "depth": "deep",
+        "topic": "fun",
+        "risk": "mightbesensitive"
+    },
+    {
+        "question": "Was nimmst du aus dem Meeting mit?",
+        "type": "checkout",
+        "depth": "light",
+        "topic": "learning",
+        "risk": "safe"
+    },
+    {
+        "question": "Wie fühlst du dich jetzt nach der Runde?",
+        "type": "checkout",
+        "depth": "light",
+        "topic": "mood",
+        "risk": "safe"
+    },
+    {
+        "question": "Was war der größte Gewinn heute?",
+        "type": "checkout",
+        "depth": "light",
+        "topic": "work",
+        "risk": "safe"
+    },
+    {
+        "question": "Welche Aufgabe machst du jetzt als Nächstes?",
+        "type": "checkout",
+        "depth": "light",
+        "topic": "work",
+        "risk": "safe"
+    },
+    {
+        "question": "Was hat dich heute zum Lachen gebracht?",
+        "type": "checkout",
+        "depth": "light",
+        "topic": "fun",
+        "risk": "safe"
+    },
+    {
+        "question": "Wie war die Zusammenarbeit heute?",
+        "type": "checkout",
+        "depth": "light",
+        "topic": "team",
+        "risk": "safe"
+    },
+    {
+        "question": "Was hat dich heute inspiriert?",
+        "type": "checkout",
+        "depth": "medium",
+        "topic": "learning",
+        "risk": "safe"
+    },
+    {
+        "question": "Welche Stimmung nimmst du mit nach Hause?",
+        "type": "checkout",
+        "depth": "medium",
+        "topic": "mood",
+        "risk": "safe"
+    },
+    {
+        "question": "Was lief heute besonders gut im Team?",
+        "type": "checkout",
+        "depth": "medium",
+        "topic": "team",
+        "risk": "safe"
+    },
+    {
+        "question": "Welche Entscheidung war heute wichtig?",
+        "type": "checkout",
+        "depth": "medium",
+        "topic": "work",
+        "risk": "safe"
+    },
+    {
+        "question": "Was war dein Highlight des Tages?",
+        "type": "checkout",
+        "depth": "medium",
+        "topic": "fun",
+        "risk": "safe"
+    },
+    {
+        "question": "Was hat dich emotional bewegt?",
+        "type": "checkout",
+        "depth": "deep",
+        "topic": "mood",
+        "risk": "mightbesensitive"
+    },
+    {
+        "question": "Welche Herausforderung hast du gemeistert?",
+        "type": "checkout",
+        "depth": "deep",
+        "topic": "work",
+        "risk": "mightbesensitive"
+    },
+    {
+        "question": "Wie hat sich das Teamgefühl verändert?",
+        "type": "checkout",
+        "depth": "deep",
+        "topic": "team",
+        "risk": "mightbesensitive"
+    },
+    {
+        "question": "Welche Lektion nimmst du langfristig mit?",
+        "type": "checkout",
+        "depth": "deep",
+        "topic": "learning",
+        "risk": "mightbesensitive"
+    },
+    {
+        "question": "Was hat dich heute wirklich erfüllt?",
+        "type": "checkout",
+        "depth": "deep",
+        "topic": "fun",
+        "risk": "mightbesensitive"
+    },
+    {
+        "question": "Welche Stimmung hast du für morgen?",
+        "type": "checkin",
+        "depth": "light",
+        "topic": "mood",
+        "risk": "safe"
+    },
+    {
+        "question": "Was ist dein Fokus heute?",
+        "type": "checkin",
+        "depth": "light",
+        "topic": "work",
+        "risk": "safe"
+    },
+    {
+        "question": "Wer braucht heute Unterstützung?",
+        "type": "checkin",
+        "depth": "light",
+        "topic": "team",
+        "risk": "safe"
+    }
+]

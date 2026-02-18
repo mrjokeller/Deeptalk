@@ -1,0 +1,4 @@
+type: checkin, checkout
+depth: light, medium, deep
+topic: mood, work, team, learning, fun
+risk: safe, might_be_sensitive

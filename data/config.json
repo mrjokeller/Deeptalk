@@ -1,0 +1,8 @@
+{
+    "type": "checkin",
+    "depth": "light",
+    "topic": [
+        "mood"
+    ],
+    "risk": "safe"
+}

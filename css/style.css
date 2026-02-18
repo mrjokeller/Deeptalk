@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #121212;
+}
+
+.header {
+    font-size: 1.5rem;
+    margin: 1rem;
+    color: white;
+}
+
+.filter {
+    margin: 16px;
+    color: whitesmoke;
+}
+
+.filter h3 {
+    margin-top: 16px;
+    font-weight: 400;
+    font-size: medium;
+    color: #cecece;
+}
+
+.filter-pills {
+    display: flex;
+    font-size: small;
+}
+
+.filter-pill {
+    cursor: pointer;
+    background-color: #510bc21e;
+    border: 0.05rem solid #6d6d6d;
+    padding: 8px 16px;
+    margin-top: 8px;
+    margin-right: 8px;
+    border-radius: 10vw;
+    transition: linear 0.125s;
+    color: #cecece;
+}
+
+.filter-pill.active {
+    color: white;
+    border: 0.05rem solid whitesmoke;
+    background-color: #510bc2;
+    transition: linear 0.125s;
+}
