@@ -11,6 +11,20 @@ let filter = { ...defaultConfig};
 window.onload = loadConfig();
 window.onload = fetchQuestions();
 
+const welcomeScreen = document.getElementById('welcome-screen');
+const questionScreen = document.getElementById('question-screen');
+
+function showQuestions() {
+    console.log('i got clicked')
+    welcomeScreen.classList.add('hidden');
+    questionScreen.classList.remove('hidden');
+}
+
+function showWelcome() {
+    questionScreen.classList.add('hidden');
+    welcomeScreen.classList.remove('hidden');
+}
+
 // Save on change
 function saveConfig(newConfig) {
     filter = { ...filter, ...newConfig };
@@ -124,4 +138,4 @@ function getNextQuestion() {
     console.log(filteredQuestions[randomID]);
 }
 
-document.getElementById('btn-start-talk').onclick = loadFilteredQuestions;
+document.getElementById('btn-start-talk').addEventListener('click', showQuestions);               

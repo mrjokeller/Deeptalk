@@ -19,74 +19,79 @@
         <h1>Deeptalk</h1>
     </div>
     <div class="content">
-    <div class="filter">
-        <h2>Filter</h2>
-        <div class="filter">
-            <h3>Typ</h3>
-            <div class="filter-pills">
-                <div class="filter-pill" data-category="type" data-value="checkin">
-                    <i class="fa-solid fa-play"></i>
-                    <span>Check in</span>
-                </div>
-                <div class="filter-pill" data-category="type" data-value="checkout">
-                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
-                    <span>Check out</span>
-                </div>
-            </div>
-            <h3>Tiefe</h3>
-            <div class="filter-pills">
-                <div class="filter-pill" data-category="depth" data-value="light">
-                    <i class="fa-regular fa-circle"></i>
-                    <span>Leicht</span>
-                </div>
-                <div class="filter-pill" data-category="depth" data-value="medium">
-                    <i class="fa-solid fa-circle-half-stroke"></i>
-                    <span>Medium</span>
-                </div>
-                <div class="filter-pill" data-category="depth" data-value="deep">
-                    <i class="fa-solid fa-circle"></i>
-                    <span>Tief</span>
-                </div>
-            </div>
-            <h3>Thema</h3>
-            <div class="filter-pills">
-                <div class="filter-pill" data-category="topic" data-value="mood">
-                    <i class="fa-solid fa-heart"></i>
-                    <span>Stimmung</span>
-                </div>
-                <div class="filter-pill" data-category="topic" data-value="work">
-                    <i class="fa-solid fa-briefcase"></i>
-                    <span>Arbeit</span>
-                </div>
-                <div class="filter-pill" data-category="topic" data-value="team">
-                    <i class="fa-solid fa-users"></i>
-                    <span>Team</span>
-                </div>
-                <div class="filter-pill" data-category="topic" data-value="learning">
-                    <i class="fa-solid fa-brain"></i>
-                    <span>Lernen</span>
-                </div>
-                <div class="filter-pill" data-category="topic" data-value="fun">
-                    <i class="fa-regular fa-face-laugh-squint"></i>
-                    <span>Spaß</span>
-                </div>
-            </div>
-            <!-- muss noch entscheiden, ob das hier in das finale Produkt soll -->
-            <!-- <h3>Risiko</h3>
-            <div class="filter-pills">
-                <div class="filter-pill" data-category="risk" data-value="safe">
-                    <i class="fa-solid fa-hands-holding-circle"></i>
-                    <span>Sicher</span>
-                </div>
-                <div class="filter-pill" data-category="risk" data-value="might_be_sensitive">
-                    <i class="fa-solid fa-asterisk"></i>
-                    <span>evtl. Sensitiv</span>
-                </div>
-            </div> -->
-        </div>
+        <div id="welcome-screen" class="">
 
-    </div>
-        <button id="btn-start-talk">Los geht's!</button>
+            <div class="filter">
+                <h2>Filter</h2>
+                <div class="filter">
+                    <h3>Typ</h3>
+                    <div class="filter-pills">
+                        <div class="filter-pill" data-category="type" data-value="checkin">
+                            <i class="fa-solid fa-play"></i>
+                            <span>Check in</span>
+                        </div>
+                        <div class="filter-pill" data-category="type" data-value="checkout">
+                            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                            <span>Check out</span>
+                        </div>
+                    </div>
+                    <h3>Tiefe</h3>
+                    <div class="filter-pills">
+                        <div class="filter-pill" data-category="depth" data-value="light">
+                            <i class="fa-regular fa-circle"></i>
+                            <span>Leicht</span>
+                        </div>
+                        <div class="filter-pill" data-category="depth" data-value="medium">
+                            <i class="fa-solid fa-circle-half-stroke"></i>
+                            <span>Medium</span>
+                        </div>
+                        <div class="filter-pill" data-category="depth" data-value="deep">
+                            <i class="fa-solid fa-circle"></i>
+                            <span>Tief</span>
+                        </div>
+                    </div>
+                    <h3>Thema</h3>
+                    <div class="filter-pills">
+                        <div class="filter-pill" data-category="topic" data-value="mood">
+                            <i class="fa-solid fa-heart"></i>
+                            <span>Stimmung</span>
+                        </div>
+                        <div class="filter-pill" data-category="topic" data-value="work">
+                            <i class="fa-solid fa-briefcase"></i>
+                            <span>Arbeit</span>
+                        </div>
+                        <div class="filter-pill" data-category="topic" data-value="team">
+                            <i class="fa-solid fa-users"></i>
+                            <span>Team</span>
+                        </div>
+                        <div class="filter-pill" data-category="topic" data-value="learning">
+                            <i class="fa-solid fa-brain"></i>
+                            <span>Lernen</span>
+                        </div>
+                        <div class="filter-pill" data-category="topic" data-value="fun">
+                            <i class="fa-regular fa-face-laugh-squint"></i>
+                            <span>Spaß</span>
+                        </div>
+                    </div>
+                    <!-- muss noch entscheiden, ob das hier in das finale Produkt soll -->
+                    <!-- <h3>Risiko</h3>
+                    <div class="filter-pills">
+                        <div class="filter-pill" data-category="risk" data-value="safe">
+                            <i class="fa-solid fa-hands-holding-circle"></i>
+                            <span>Sicher</span>
+                        </div>
+                        <div class="filter-pill" data-category="risk" data-value="might_be_sensitive">
+                            <i class="fa-solid fa-asterisk"></i>
+                            <span>evtl. Sensitiv</span>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+            <button id="btn-start-talk">Los geht's!</button>
+        </div>
+        <div id="question-screen" class="hidden">
+            <h1>Questions</h1>
+        </div>
     </div>
 </body>
 
