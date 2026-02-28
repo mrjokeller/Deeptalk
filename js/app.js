@@ -1,12 +1,13 @@
 // Default filter for the app
-const defaultConfig =  {
+const defaultConfig = {
     type: ['checkin'],
     depth: ['light'],
     topic: ['mood'],
     risk: ['safe']
 };
 
-let filter = { ...defaultConfig};
+let questions = [];
+let filter = { ...defaultConfig };
 
 window.onload = loadConfig();
 window.onload = fetchQuestions();
@@ -18,6 +19,8 @@ function showQuestions() {
     console.log('i got clicked')
     welcomeScreen.classList.add('hidden');
     questionScreen.classList.remove('hidden');
+
+    displayQuestion();
 }
 
 function showWelcome() {
@@ -36,7 +39,7 @@ function loadConfig() {
     if (savedConfig) {
         filter = JSON.parse(savedConfig);
     } else {
-        filter = { ...defaultConfig};
+        filter = { ...defaultConfig };
         saveConfig(filter);
     }
 
@@ -50,12 +53,13 @@ function applyFilter() {
         value.forEach((element) => {
             const pill = document.querySelector(`[data-category="${category}"][data-value="${element}"]`);
             if (pill) pill.classList.add('active');
-            
+
         });
     });
+    getFilteredQuestions();
 }
 
-document.addEventListener('click', function(e) {
+document.addEventListener('click', function (e) {
     if (e.target.closest('.filter-pill')) {
         const pill = e.target.closest('.filter-pill');
         const category = pill.dataset.category;
@@ -99,7 +103,7 @@ function removeValue(array, value) {
 }
 
 // Fragen werden gelden und dargestellt
-let questions = [];
+
 let filteredQuestions = [];
 
 async function fetchQuestions() {
@@ -110,7 +114,7 @@ async function fetchQuestions() {
         // Filter einstellen
     } catch (error) {
         console.error('questions.json konnte nicht geladen werden: ', error);
-        questions = [{question: 'Fallback-Frage: Wie geht\'s?', type: 'checkin', depth: 'light', topic: 'mood', risk: 'safe'}];
+        questions = [{ question: 'Fallback-Frage: Wie geht\'s?', type: 'checkin', depth: 'light', topic: 'mood', risk: 'safe' }];
     }
 }
 
@@ -121,21 +125,14 @@ function getFilteredQuestions() {
         //         (!filter.topic || question.topic === filter.topic) &&
         //         (!filter.risk || question.risk === filter.risk);
         return (!filter.type || filter.type.includes(question.type)) &&
-                (!filter.depth || filter.depth.includes(question.depth)) &&
-                (!filter.topic || filter.topic.includes(question.topic)) &&
-                (!filter.risk || filter.risk.includes(question.risk));
+            (!filter.depth || filter.depth.includes(question.depth)) &&
+            (!filter.topic || filter.topic.includes(question.topic)) &&
+            (!filter.risk || filter.risk.includes(question.risk));
     });
 }
 
-function loadFilteredQuestions() {
-    filteredQuestions = getFilteredQuestions();
-    console.log(filteredQuestions);
-}
-
-function getNextQuestion() {
-    const filteredQuestions = getFilteredQuestions();
-    const randomID = Math.floor(Math.random() * filteredQuestions.length);
-    console.log(filteredQuestions[randomID]);
+function displayQuestion() {
+    document.getElementById('question').innerHTML = questions[-1];
 }
 
 document.getElementById('btn-start-talk').addEventListener('click', showQuestions);               

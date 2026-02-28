@@ -11,6 +11,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
+    color: var(--text);
 }
 
 .hidden {
@@ -19,7 +20,6 @@
 
 #welcome-screen,
 #question-screen {
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
